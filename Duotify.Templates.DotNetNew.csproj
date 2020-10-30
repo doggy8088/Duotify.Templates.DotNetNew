@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageType>Template</PackageType>
+		<PackageVersion>1.0</PackageVersion>
+		<PackageId>Duotify.Templates.DotNetNew</PackageId>
+		<Title>Duotify.Templates.DotNetNew</Title>
+		<Authors>Will 保哥</Authors>
+		<Description>多奇教育訓練製作的 "dotnet new" 範本套件</Description>
+		<PackageTags>dotnet-new;templates;duotify</PackageTags>
+		<TargetFramework>netstandard2.0</TargetFramework>
+
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+
+		<Copyright>Copyright (c) 2020 Will 保哥</Copyright>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageProjectUrl>https://github.com/doggy8088/Duotify.Templates.DotNetNew</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/doggy8088/Duotify.Templates.DotNetNew</RepositoryUrl>
+		<PackageReleaseNotes>Initial release with `go` and `editorconfig` templates.</PackageReleaseNotes>
+		<PackageIcon>icon.png</PackageIcon>
+
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<NoPackageAnalysis>true</NoPackageAnalysis>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath=""/>
+
+		<Content Include="project-templates\**\*" />
+		<Content Include="item-templates\**\*" />
+
+		<Compile Remove="project-templates\**\*" />
+		<Compile Remove="item-templates\**\*" />
+	</ItemGroup>
+
+</Project>

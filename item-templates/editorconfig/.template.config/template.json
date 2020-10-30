@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "author": "Will Huang",
+  "classifications": [],
+  "identity": "willh.editorconfig",
+  "name": "EditorConfig for C# Project",
+  "shortName": "editorconfig",
+  "sourceName": "MyProjectName",
+  "preferNameDirectory": true
+}

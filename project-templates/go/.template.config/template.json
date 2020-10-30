@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "tags": {
+    "language": "Go",
+    "type": "project"
+  },
+  "author": "Will Huang",
+  "classifications": [],
+  "identity": "willh.go",
+  "name": "Go Project Templates",
+  "shortName": "go",
+  "sourceName": "YOUR-REPO-NAME",
+  "preferNameDirectory": true,
+  "symbols":{
+      "copyrightName": {
+          "type": "parameter",
+          "defaultValue": "YOUR-NAME-HERE",
+          "replaces":"YOUR-NAME-HERE"
+      },
+      "githubid": {
+          "type": "parameter",
+          "defaultValue": "YOUR-USER-OR-ORG-NAME",
+          "replaces":"YOUR-USER-OR-ORG-NAME"
+      }
+  }
+}
