@@ -62,3 +62,9 @@ dotnet new -i Duotify.Templates.DotNetNew
 ```sh
 dotnet new -u Duotify.Templates.DotNetNew
 ```
+
+## 建置與發行 NuGet 套件
+
+```sh
+dotnet pack
+```
