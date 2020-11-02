@@ -6,9 +6,9 @@
   },
   "author": "Will Huang",
   "classifications": [],
-  "identity": "willh.go",
-  "name": "Go Project (CLI)",
-  "shortName": "go",
+  "identity": "willh.gogin",
+  "name": "Go Project with Gin Web Framework",
+  "shortName": "gogin",
   "sourceName": "YOUR-REPO-NAME",
   "preferNameDirectory": true,
   "symbols":{

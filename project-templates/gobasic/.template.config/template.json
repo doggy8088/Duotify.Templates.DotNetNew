@@ -6,9 +6,9 @@
   },
   "author": "Will Huang",
   "classifications": [],
-  "identity": "willh.go",
-  "name": "Go Project (CLI)",
-  "shortName": "go",
+  "identity": "willh.gobasic",
+  "name": "Go Project (Basic layout)",
+  "shortName": "gobasic",
   "sourceName": "YOUR-REPO-NAME",
   "preferNameDirectory": true,
   "symbols":{
