@@ -2,6 +2,11 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.2.1 - 2020-11-03
+
+- Add `/dist/` to the `.gitignore` file.
+- Remove translation link in `README.md`.
+
 ## 1.2.0 - 2020-11-03
 
 Add the following Go project templates:
