@@ -14,7 +14,31 @@ dotnet new -i Duotify.Templates.DotNetNew
 dotnet new -i Duotify.Templates.DotNetNew
 ```
 
+## 移除範本
+
+```sh
+dotnet new -u Duotify.Templates.DotNetNew
+```
+
 ## 專案範本 (Project Templates)
+
+- antlr
+
+    **說明**
+
+    提供一個包含 [ANTLR](https://www.antlr.org/) 完整範例的 .NET 6 Console 專案範本。
+
+    **用法**
+
+    ```sh
+    dotnet new antlr -c "YOUR-NAME" -n "YOUR-APP-NAME"
+    ```
+
+    **範例**
+
+    ```sh
+    dotnet new antlr -c "Will 保哥" -n "PowerBuilder"
+    ```
 
 - go
 
@@ -128,14 +152,41 @@ dotnet new -i Duotify.Templates.DotNetNew
     dotnet new editorconfig
     ```
 
-## 移除範本
+## 測試範本
 
-```sh
-dotnet new -u Duotify.Templates.DotNetNew
-```
+1. 移除與安裝
+
+    ```ps1
+    dotnet new --uninstall "$PWD\project-templates\antlr4"
+    dotnet new -i ./project-templates/antlr4
+    dotnet new antlr -n My -o G:\MyFirstAntlr --force
+    code G:\MyFirstAntlr
+    ```
+
+2. 列出已安裝範本
+
+    ```ps1
+    dotnet new --uninstall
+    ```
+
+3. 移除現有範本
+
+    ```ps1
+    dotnet new --uninstall "$PWD\project-templates\antlr4"
+    ```
 
 ## 建置與發行 NuGet 套件
 
-```sh
-dotnet pack
-```
+1. 封裝套件
+
+    ```sh
+    dotnet pack
+    ```
+
+2. 到 [NuGet Gallery | Manage My Package](https://www.nuget.org/account/Packages) 執行 **Add new** 上傳新版本
+
+    ```ps1
+    bin/Debug/Duotify.Templates.DotNetNew.X.X.X.nupkg
+    ```
+
+3. 手動填入 `README.md` 內容，並按下 **Submit** 按鈕送審！

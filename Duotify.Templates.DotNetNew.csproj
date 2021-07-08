@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.2.1</PackageVersion>
+		<PackageVersion>1.3.0</PackageVersion>
 		<PackageId>Duotify.Templates.DotNetNew</PackageId>
 		<Title>Duotify.Templates.DotNetNew</Title>
 		<Authors>Will 保哥</Authors>
@@ -14,14 +14,15 @@
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<ContentTargetFolders>content</ContentTargetFolders>
 
-		<Copyright>Copyright (c) 2020 Will 保哥</Copyright>
+		<Copyright>Copyright (c) 2020-2021 Will 保哥</Copyright>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageProjectUrl>https://github.com/doggy8088/Duotify.Templates.DotNetNew</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/doggy8088/Duotify.Templates.DotNetNew</RepositoryUrl>
-		<PackageReleaseNotes>- Add `/dist/` to the `.gitignore` file.
-- Remove translation link in `README.md`.
+		<PackageReleaseNotes>- Add `antlr` project template
+  - Support for .NET 6 Console App
+  - Use [System.CommandLine.DragonFruit](https://www.nuget.org/packages/System.CommandLine.DragonFruit) for CLI arguments parsing.
 </PackageReleaseNotes>
 		<PackageIcon>icon.png</PackageIcon>
 
