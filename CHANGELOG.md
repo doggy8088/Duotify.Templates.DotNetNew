@@ -2,6 +2,12 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.3.0 - 2021-07-08
+
+- Add `antlr` project template
+  - Support for .NET 6 Console App
+  - Use [System.CommandLine.DragonFruit](https://www.nuget.org/packages/System.CommandLine.DragonFruit) for CLI arguments parsing.
+
 ## 1.2.1 - 2020-11-03
 
 - Add `/dist/` to the `.gitignore` file.

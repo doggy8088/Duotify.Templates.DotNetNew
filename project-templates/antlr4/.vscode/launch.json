@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ANTLR4 grammar",
+            "type": "antlr-debug",
+            "request": "launch",
+
+            // "grammar": "${file}",
+            "grammar": "AntlrGrammarNameParser.g4",
+
+            "startRule": "start_rule",
+
+            // "input": "examples/example01.txt",
+            "input": "${file}",
+
+            "printParseTree": true,
+            "visualParseTree": true
+        }
+    ]
+}

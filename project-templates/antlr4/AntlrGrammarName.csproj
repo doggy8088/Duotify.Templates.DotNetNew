@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.21216.1" />
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.9.2" />
+    <PackageReference Include="Antlr4BuildTasks" Version="8.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <Antlr4 Include="AntlrGrammarNameLexer.g4">
+          <Listener>true</Listener>
+          <Visitor>true</Visitor>
+          <GAtn>false</GAtn>
+          <Package>AntlrGrammarName</Package>
+          <Error>true</Error>
+      </Antlr4>
+      <Antlr4 Include="AntlrGrammarNameParser.g4">
+          <Listener>true</Listener>
+          <Visitor>true</Visitor>
+          <GAtn>false</GAtn>
+          <Package>AntlrGrammarName</Package>
+          <Error>true</Error>
+      </Antlr4>
+  </ItemGroup>
+
+</Project>
