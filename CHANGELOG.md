@@ -2,6 +2,15 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.4.1 - 2021-07-22
+
+- Add `"resolveJsonModule": true` to `tsnode` project template
+
+## 1.4.0 - 2021-07-18
+
+- Add `tsnode` project template
+  - Node.js + TypeScript + Nodemon + ts-node + VSCode
+
 ## 1.3.0 - 2021-07-08
 
 - Add `antlr` project template

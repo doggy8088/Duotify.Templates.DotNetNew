@@ -22,6 +22,34 @@ dotnet new -u Duotify.Templates.DotNetNew
 
 ## 專案範本 (Project Templates)
 
+- tsnode
+
+    **說明**
+
+    提供一個包含 Node.js + TypeScript + Nodemon + ts-node + VSCode 完整開發環境的專案範本。
+
+    **用法**
+
+    ```sh
+    dotnet new tsnode -c "YOUR-NAME" -n "your-app-name"
+    ```
+
+    **範例 1**
+
+    ```sh
+    dotnet new tsnode -c "Will 保哥" -n "myweb"
+    cd myweb
+    npm install
+    ```
+
+    **範例 2**
+
+    ```sh
+    mkdir myweb && cd myweb
+    dotnet new tsnode -c "Will 保哥"
+    npm install
+    ```
+
 - antlr
 
     **說明**
@@ -157,10 +185,10 @@ dotnet new -u Duotify.Templates.DotNetNew
 1. 移除與安裝
 
     ```ps1
-    dotnet new --uninstall "$PWD\project-templates\antlr4"
-    dotnet new -i ./project-templates/antlr4
-    dotnet new antlr -n My -o G:\MyFirstAntlr --force
-    code G:\MyFirstAntlr
+    dotnet new --uninstall "$PWD\project-templates\tsnode"
+    dotnet new -i ./project-templates/tsnode
+    dotnet new antlr -n My -o G:\my-web --force
+    code G:\my-web
     ```
 
 2. 列出已安裝範本
@@ -172,7 +200,7 @@ dotnet new -u Duotify.Templates.DotNetNew
 3. 移除現有範本
 
     ```ps1
-    dotnet new --uninstall "$PWD\project-templates\antlr4"
+    dotnet new --uninstall "$PWD\project-templates\tsnode"
     ```
 
 ## 建置與發行 NuGet 套件

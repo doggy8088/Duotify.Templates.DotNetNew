@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "npm start",
+            "type": "shell",
+            "command": "npm start",
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "showReuseMessage": false,
+                "reveal": "always",
+                "clear": true,
+                "focus": true
+            }
+        }
+    ]
+}

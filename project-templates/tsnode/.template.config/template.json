@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "tags": {
+    "language": "TypeScript",
+    "type": "project"
+  },
+  "author": "Will Huang",
+  "classifications": [],
+  "identity": "willh.tsnode",
+  "name": "Node.js with TypeScript",
+  "shortName": "tsnode",
+  "sourceName": "project-name",
+  "preferNameDirectory": true,
+  "symbols":{
+      "copyrightName": {
+          "type": "parameter",
+          "defaultValue": "YOUR-NAME-HERE",
+          "replaces":"YOUR-NAME-HERE"
+      }
+  }
+}
