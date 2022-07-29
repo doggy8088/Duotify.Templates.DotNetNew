@@ -2,7 +2,7 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
-## 1.5.1 - 2022-07-29
+## 1.5.2 - 2022-07-29
 
 - Bug fixed
 

@@ -3,7 +3,8 @@
 ## 編譯程式
 
 ```sh
-javac YOUR-APP-NAME
+cd src
+javac YOUR-APP-NAME.java
 ```
 
 ## 執行程式
