@@ -1,0 +1,5 @@
+{
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.saveActions.organizeImports": true,
+  "editor.foldingImportsByDefault": true
+}

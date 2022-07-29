@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "tags": {
+    "language": "Java",
+    "type": "project"
+  },
+  "author": "Will Huang",
+  "classifications": [],
+  "identity": "willh.jconsole",
+  "name": "Java Project (Console)",
+  "shortName": "jconsole",
+  "sourceName": "YOUR-APP-NAME",
+  "preferNameDirectory": true,
+  "symbols":{
+      "copyrightName": {
+          "type": "parameter",
+          "defaultValue": "YOUR-NAME-HERE",
+          "replaces":"YOUR-NAME-HERE"
+      },
+      "githubId": {
+          "type": "parameter",
+          "defaultValue": "YOUR-USER-OR-ORG-NAME",
+          "replaces":"YOUR-USER-OR-ORG-NAME"
+      }
+  }
+}
