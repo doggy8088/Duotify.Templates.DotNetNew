@@ -2,6 +2,10 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.5.1 - 2022-07-29
+
+- Bug fixed
+
 ## 1.5.0 - 2022-07-29
 
 - Add `jconsole` project template
