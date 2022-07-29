@@ -9,7 +9,7 @@
   "identity": "willh.gofull",
   "name": "Go Project (Full layout)",
   "shortName": "gofull",
-  "sourceName": "YOUR-REPO-NAME",
+  "sourceName": "YOUR-APP-NAME",
   "preferNameDirectory": true,
   "symbols":{
       "copyrightName": {

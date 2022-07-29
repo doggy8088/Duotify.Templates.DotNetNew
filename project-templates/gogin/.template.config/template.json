@@ -9,7 +9,7 @@
   "identity": "willh.gogin",
   "name": "Go Project with Gin Web Framework",
   "shortName": "gogin",
-  "sourceName": "YOUR-REPO-NAME",
+  "sourceName": "YOUR-APP-NAME",
   "preferNameDirectory": true,
   "symbols":{
       "copyrightName": {

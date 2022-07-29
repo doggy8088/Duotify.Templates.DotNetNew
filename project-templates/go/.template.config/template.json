@@ -9,7 +9,7 @@
   "identity": "willh.go",
   "name": "Go Project (CLI)",
   "shortName": "go",
-  "sourceName": "YOUR-REPO-NAME",
+  "sourceName": "YOUR-APP-NAME",
   "preferNameDirectory": true,
   "symbols":{
       "copyrightName": {

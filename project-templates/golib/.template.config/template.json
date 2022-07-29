@@ -9,7 +9,7 @@
   "identity": "willh.golib",
   "name": "Go Project (Library layout)",
   "shortName": "golib",
-  "sourceName": "YOUR-REPO-NAME",
+  "sourceName": "YOUR-APP-NAME",
   "preferNameDirectory": true,
   "symbols":{
       "copyrightName": {

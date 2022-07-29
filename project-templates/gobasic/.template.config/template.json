@@ -9,7 +9,7 @@
   "identity": "willh.gobasic",
   "name": "Go Project (Basic layout)",
   "shortName": "gobasic",
-  "sourceName": "YOUR-REPO-NAME",
+  "sourceName": "YOUR-APP-NAME",
   "preferNameDirectory": true,
   "symbols":{
       "copyrightName": {
