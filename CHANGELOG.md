@@ -2,6 +2,12 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.5.0 - 2022-07-29
+
+- Add `jconsole` project template
+  - A basic Java console app
+- Update LICENSE's year
+
 ## 1.4.1 - 2021-07-22
 
 - Add `"resolveJsonModule": true` to `tsnode` project template

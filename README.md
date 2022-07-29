@@ -22,6 +22,26 @@ dotnet new -u Duotify.Templates.DotNetNew
 
 ## 專案範本 (Project Templates)
 
+- jconsole
+
+    **說明**
+
+    提供一個包含 Java 基礎專案的專案範本。
+
+    **用法**
+
+    ```sh
+    dotnet new jconsole -c "YOUR-NAME" -n "your-app-name"
+    ```
+
+    **範例 1**
+
+    ```sh
+    dotnet new jconsole -c "Will 保哥" -n "CheckClassPath"
+    cd CheckClassPath
+    java CheckClassPath.java
+    ```
+
 - tsnode
 
     **說明**
@@ -185,10 +205,10 @@ dotnet new -u Duotify.Templates.DotNetNew
 1. 移除與安裝
 
     ```ps1
-    dotnet new --uninstall "$PWD\project-templates\tsnode"
-    dotnet new -i ./project-templates/tsnode
-    dotnet new antlr -n My -o G:\my-web --force
-    code G:\my-web
+    dotnet new --uninstall "$PWD\project-templates\jconsole"
+    dotnet new -i ./project-templates/jconsole
+    dotnet new jconsole -c "Will 保哥" -n "CheckClassPath" -o G:\myapp --force
+    code G:\myapp
     ```
 
 2. 列出已安裝範本
@@ -200,7 +220,7 @@ dotnet new -u Duotify.Templates.DotNetNew
 3. 移除現有範本
 
     ```ps1
-    dotnet new --uninstall "$PWD\project-templates\tsnode"
+    dotnet new --uninstall "$PWD\project-templates\jconsole"
     ```
 
 ## 建置與發行 NuGet 套件
@@ -211,10 +231,24 @@ dotnet new -u Duotify.Templates.DotNetNew
     dotnet pack
     ```
 
+    > 此命令會產生一個 `bin/Debug/Duotify.Templates.DotNetNew.X.X.X.nupkg` 檔案。
+
 2. 到 [NuGet Gallery | Manage My Package](https://www.nuget.org/account/Packages) 執行 **Add new** 上傳新版本
 
     ```ps1
     bin/Debug/Duotify.Templates.DotNetNew.X.X.X.nupkg
     ```
 
-3. 手動填入 `README.md` 內容，並按下 **Submit** 按鈕送審！
+3. 手動填入 `NUGET_README.md` 內容，並按下 **Submit** 按鈕送審！
+
+    通常 5 分鐘以內就可以變成 `Listed` 狀態！
+
+    <https://www.nuget.org/packages/Duotify.Templates.DotNetNew/>
+
+4. 更新 GitHub 的 [Releases](https://github.com/doggy8088/Duotify.Templates.DotNetNew/releases) 資訊
+
+    `Draft a new release`
+
+    設定 `CHANGELOG.md` 的內容
+
+    上傳 `bin/Debug/Duotify.Templates.DotNetNew.X.X.X.nupkg` 檔案
