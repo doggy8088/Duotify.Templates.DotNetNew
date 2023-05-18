@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+
+  "author": "Will 保哥",
+  "classifications": ["Common", "Data"],
+  "name": "EFRepository and Unit of Work",
+  "identity": "Duotify.EFRepository",
+  "shortName": "efr",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}

@@ -2,6 +2,11 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.6.0 - 2023-05-18
+
+- Add `efr` item template.
+  - EFRepository & Unit of Work
+
 ## 1.5.2 - 2022-07-29
 
 - Bug fixed

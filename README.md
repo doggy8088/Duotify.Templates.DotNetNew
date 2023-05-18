@@ -200,6 +200,26 @@ dotnet new -u Duotify.Templates.DotNetNew
     dotnet new editorconfig
     ```
 
+- efr
+
+    **說明**
+
+    提供 C# 與 Entity Framework Core 專案的 EFRepository 與 Unit of Work 實作範本檔案。
+
+    建立的檔案中會有個 CourseRepository.cs 為範例程式，裡面的程式都是註解掉的。
+
+    **用法**
+
+    ```sh
+    dotnet new efr
+    ```
+
+    **範例**
+
+    ```sh
+    dotnet new efr
+    ```
+
 ## 測試範本
 
 1. 移除與安裝
