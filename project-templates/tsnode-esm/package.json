@@ -5,6 +5,11 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
+    "esbuild-base": "esbuild ./src/app.ts --bundle --outfile=dist/app.js --format=esm --platform=node",
+    "esbuild:prod": "npm run esbuild-base -- --minify",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+
     "start": "nodemon src/app.ts",
     "build": "tsc",
     "node": "tsc && node dist/app.js"
@@ -17,6 +22,7 @@
     "@tsconfig/node-lts": "^18.12.5",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
+    "esbuild": "^0.19.5",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "eslint": "^8.52.0",

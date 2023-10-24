@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.7.0</PackageVersion>
+		<PackageVersion>1.7.1</PackageVersion>
 		<PackageId>Duotify.Templates.DotNetNew</PackageId>
 		<Title>Duotify.Templates.DotNetNew</Title>
 		<Authors>Will 保哥</Authors>
@@ -20,8 +20,9 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/doggy8088/Duotify.Templates.DotNetNew</RepositoryUrl>
-		<PackageReleaseNotes>- Add `tsnode-esm` project template.
-- TypeScript + Node.js with ESM support</PackageReleaseNotes>
+		<PackageReleaseNotes>- Fix some issues for `tsnode-esm` project template.
+　- Use `esbuiild` to bundle ESM modules.
+　- Update `tsconfig.json` to support `Bundler` moduleResolution.</PackageReleaseNotes>
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 

@@ -72,7 +72,7 @@ dotnet new -u Duotify.Templates.DotNetNew
 
     **說明**
 
-    提供一個包含 Node.js + TypeScript (ESM) + Nodemon + ts-node + VSCode 完整開發環境的專案範本。
+    提供一個包含 Node.js + TypeScript 5 (ESM) + Nodemon + ts-node + VSCode + esbuild 完整開發環境的專案範本。
 
     **用法**
 
