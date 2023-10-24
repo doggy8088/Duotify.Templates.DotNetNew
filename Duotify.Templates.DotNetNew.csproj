@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.7.1</PackageVersion>
+		<PackageVersion>1.7.2</PackageVersion>
 		<PackageId>Duotify.Templates.DotNetNew</PackageId>
 		<Title>Duotify.Templates.DotNetNew</Title>
 		<Authors>Will 保哥</Authors>
@@ -20,9 +20,11 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/doggy8088/Duotify.Templates.DotNetNew</RepositoryUrl>
+
+		<PackageReadmeFile>NUGET_README.md</PackageReadmeFile>
 		<PackageReleaseNotes>- Fix some issues for `tsnode-esm` project template.
-　- Use `esbuiild` to bundle ESM modules.
-　- Update `tsconfig.json` to support `Bundler` moduleResolution.</PackageReleaseNotes>
+　- Update `tsconfig.json` to a minimized version, removed duplicated settings from `@tsconfig/node-lts/tsconfig.json`.</PackageReleaseNotes>
+
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 
@@ -33,6 +35,8 @@
 
 	<ItemGroup>
 		<None Include="icon.png" Pack="true" PackagePath=""/>
+
+		<None Include="NUGET_README.md" Pack="true" PackagePath="\"/>
 
 		<Content Include="project-templates\**\*" />
 		<Content Include="item-templates\**\*" />

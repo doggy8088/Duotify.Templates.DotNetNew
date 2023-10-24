@@ -287,7 +287,7 @@ dotnet new -u Duotify.Templates.DotNetNew
     bin/Debug/Duotify.Templates.DotNetNew.X.X.X.nupkg
     ```
 
-3. 手動填入 `NUGET_README.md` 內容，並按下 **Submit** 按鈕送審！
+3. 按下 **Submit** 按鈕送審！
 
     通常 5 分鐘以內就可以變成 `Listed` 狀態！
 

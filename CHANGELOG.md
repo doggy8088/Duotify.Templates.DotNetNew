@@ -2,6 +2,11 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.7.2 - 2023-10-25
+
+- Fix some issues for `tsnode-esm` project template.
+  - Update `tsconfig.json` to a minimized version, removed duplicated settings from `@tsconfig/node-lts/tsconfig.json`.
+
 ## 1.7.1 - 2023-10-25
 
 - Fix some issues for `tsnode-esm` project template.
