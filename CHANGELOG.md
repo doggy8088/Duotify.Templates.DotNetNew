@@ -2,6 +2,11 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.7.0 - 2023-10-25
+
+- Add `tsnode-esm` project template.
+  - TypeScript + Node.js with ESM support
+
 ## 1.6.0 - 2023-05-18
 
 - Add `efr` item template.

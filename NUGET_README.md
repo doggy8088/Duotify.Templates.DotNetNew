@@ -68,6 +68,34 @@ dotnet new -u Duotify.Templates.DotNetNew
     npm install
     ```
 
+- tsnode-esm
+
+    **說明**
+
+    提供一個包含 Node.js + TypeScript (ESM) + Nodemon + ts-node + VSCode 完整開發環境的專案範本。
+
+    **用法**
+
+    ```sh
+    dotnet new tsnode-esm -c "YOUR-NAME" -n "your-app-name"
+    ```
+
+    **範例 1**
+
+    ```sh
+    dotnet new tsnode-esm -c "Will 保哥" -n "myweb"
+    cd myweb
+    npm install
+    ```
+
+    **範例 2**
+
+    ```sh
+    mkdir myweb && cd myweb
+    dotnet new tsnode-esm -c "Will 保哥"
+    npm install
+    ```
+
 - antlr
 
     **說明**
