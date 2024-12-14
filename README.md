@@ -208,26 +208,6 @@ dotnet new -u Duotify.Templates.DotNetNew
 
 ## 項目範本 (Item Templates)
 
-- editorconfig
-
-    **說明**
-
-    提供 C# 專案預設的 `.editorconfig` 檔案，其內容參考自 [.NET code style rule options](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options?view=vs-2019&WT.mc_id=DT-MVP-4015686) 官網文件提供的範例。
-
-    若要參考 Roslyn 專案的 `.editorconfig` 檔案，可以看這裡：<https://github.com/dotnet/roslyn/blob/master/.editorconfig>
-
-    **用法**
-
-    ```sh
-    dotnet new editorconfig
-    ```
-
-    **範例**
-
-    ```sh
-    dotnet new editorconfig
-    ```
-
 - efr
 
     **說明**
@@ -273,27 +253,33 @@ dotnet new -u Duotify.Templates.DotNetNew
 
 ## 建置與發行 NuGet 套件
 
-1. 封裝套件
+1. 先更新 `Duotify.Templates.DotNetNew.csproj` 的 `<PackageVersion>` 屬性
+
+    更新為新的版本號碼，例如 `1.8.0`。
+
+2. 封裝套件
 
     ```sh
     dotnet pack
     ```
 
-    > 此命令會產生一個 `bin/Debug/Duotify.Templates.DotNetNew.X.X.X.nupkg` 檔案。
+    > 此命令會產生一個 `bin/Release/Duotify.Templates.DotNetNew.X.X.X.nupkg` 檔案。
 
-2. 到 [NuGet Gallery | Manage My Package](https://www.nuget.org/account/Packages) 執行 **Add new** 上傳新版本
+    目前 `antlr4` 的專案範本在 .NET 9 的 .NET CLI 似乎會建置過，導致會產生 `bin` 與 `obj` 目錄，且檔案還很大，全部都會被包進 `Duotify.Templates.DotNetNew.X.X.X.nupkg` 檔案中，目前需要在封裝後手動移除。移除的路徑在：`content/project-templates/antlr4/bin` 與 `content/project-templates/antlr4/obj`。
+
+3. 到 [NuGet Gallery | Manage My Package](https://www.nuget.org/account/Packages) 執行 **Add new** 上傳新版本
 
     ```ps1
-    bin/Debug/Duotify.Templates.DotNetNew.X.X.X.nupkg
+    bin/Release/Duotify.Templates.DotNetNew.X.X.X.nupkg
     ```
 
-3. 按下 **Submit** 按鈕送審！
+4. 按下 **Submit** 按鈕送審！
 
     通常 5 分鐘以內就可以變成 `Listed` 狀態！
 
     <https://www.nuget.org/packages/Duotify.Templates.DotNetNew/>
 
-4. 更新 GitHub 的 [Releases](https://github.com/doggy8088/Duotify.Templates.DotNetNew/releases) 資訊
+5. 更新 GitHub 的 [Releases](https://github.com/doggy8088/Duotify.Templates.DotNetNew/releases) 資訊
 
     `Draft a new release`
 

@@ -206,22 +206,22 @@ dotnet new -u Duotify.Templates.DotNetNew
 
 ## 項目範本 (Item Templates)
 
-- editorconfig
+- efr
 
     **說明**
 
-    提供 C# 專案預設的 `.editorconfig` 檔案，其內容參考自 [.NET code style rule options](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options?view=vs-2019&WT.mc_id=DT-MVP-4015686) 官網文件提供的範例。
+    提供 C# 與 Entity Framework Core 專案的 EFRepository 與 Unit of Work 實作範本檔案。
 
-    若要參考 Roslyn 專案的 `.editorconfig` 檔案，可以看這裡：<https://github.com/dotnet/roslyn/blob/master/.editorconfig>
+    建立的檔案中會有個 CourseRepository.cs 為範例程式，裡面的程式都是註解掉的。
 
     **用法**
 
     ```sh
-    dotnet new editorconfig
+    dotnet new efr
     ```
 
     **範例**
 
     ```sh
-    dotnet new editorconfig
+    dotnet new efr
     ```

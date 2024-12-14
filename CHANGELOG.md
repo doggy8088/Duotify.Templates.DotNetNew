@@ -2,6 +2,11 @@
 
 All notable changes to the **Duotify.Templates.DotNetNew** package will be documented in this file.
 
+## 1.8.0 - 2024-12-14
+
+- Remove `editorconfig` item template.
+  - .NET 9 SDK already includes the `editorconfig` item template.
+
 ## 1.7.2 - 2023-10-25
 
 - Fix some issues for `tsnode-esm` project template.
